@@ -152,6 +152,21 @@ collections:
     permalink: /:collection/:path/
 
 
+# Defaults
+defaults:
+  # _tools
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "tools"
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
