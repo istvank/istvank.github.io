@@ -145,6 +145,13 @@ kramdown:
   enable_coderay: false
 
 
+# Collections
+collections:
+  tools:
+    output: true
+    permalink: /:collection/:path/
+
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
