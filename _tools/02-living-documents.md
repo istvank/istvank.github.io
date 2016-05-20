@@ -10,7 +10,7 @@ modified: 2016-05-20T16:30:00+02:00
 
 <template is="dom-bind" id="app">
 <iron-ajax auto="" url="https://raw.githubusercontent.com/learning-layers/LivingDocumentsServer/master/README.md" handle-as="text" last-response="{{readme}}"></iron-ajax>
-<marked-element markdown="{{readme}}">
+<marked-element markdown="`Markdown` is _awesome_!">
   <div class="markdown-html"></div>
 </marked-element>
 </template>
