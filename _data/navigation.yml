@@ -8,3 +8,19 @@ main:
 
   - title: "About"
     url: /about/
+
+# tools links
+tools:
+  - title: Living Documents
+    url: /tools/living-documents/
+    children:
+      - title: "Get Started"
+        url: /tools/living-documents/get-started/
+      - title: "Training"
+        url: /tools/living-documents/training/
+
+  - title: Layers Box
+    url: /tools/layers-box/
+    children:
+      - title: "Get Started"
+        url: /tools/layers-box/get-started/
