@@ -1,10 +1,5 @@
 <h1>yo!</h1>
 
-<script src="https://cdn.rawgit.com/download/polymer-cdn/1.5.0/lib/webcomponentsjs/webcomponents-lite.js"></script>
-
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.5.0/lib/iron-ajax/iron-ajax.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.5.0/lib/marked-element/marked-element.html">
-
 <iron-ajax auto="" url="https://raw.githubusercontent.com/learning-layers/LivingDocumentsServer/master/README.md" handle-as="text" last-response="{{livingdocumentsReadme}}"></iron-ajax>
 
 <marked-element markdown="{{livingdocumentsReadme}}">
