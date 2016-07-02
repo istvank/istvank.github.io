@@ -1,50 +1,12 @@
 <h1>yo!</h1>
 
-<style is="custom-style">
-    .centered {
-      max-width: 550px;
-      padding: 0;
-      overflow: auto;
-    }
-    h1 {
-      margin-left: 30px;
-    }
-    h3 {
-      color: var(--google-grey-700);
-      margin-left: 30px;
-    }
-    marked-element {
-      display: block;
-      background-color: var(--google-grey-100);
-      padding: 10px 30px;
-      margin-bottom: 10px;
-    }
-    .markdown-html.custom p {
-      padding-left: 24px;
-    }
-  </style>
-
 <script src="https://cdn.rawgit.com/download/polymer-cdn/1.5.0/lib/webcomponentsjs/webcomponents-lite.js"></script>
 
 <link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.5.0/lib/iron-ajax/iron-ajax.html">
 <link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.5.0/lib/marked-element/marked-element.html">
 
-<iron-ajax auto="" url="https://raw.githubusercontent.com/learning-layers/LivingDocumentsServer/master/README.md" handle-as="text" last-response="{{readme}}"></iron-ajax>
-<marked-element markdown="`Markdown` is _awesome_!">
+<iron-ajax auto="" url="https://raw.githubusercontent.com/learning-layers/LivingDocumentsServer/master/README.md" handle-as="text" last-response="{{livingdocumentsReadme}}"></iron-ajax>
+
+<marked-element markdown="{{livingdocumentsReadme}}">
   <div class="markdown-html"></div>
-  <script type="text/markdown">
-          ## Markdown Renderer
-
-          Example:
-
-          ```html
-          <paper-toolbar>
-            <paper-icon-button icon="menu"></paper-icon-button>
-            <div class="title">Title</div>
-            <paper-icon-button icon="more"></paper-icon-button>
-          </paper-toolbar>
-          ```
-
-          _Nifty_ features.
-        </script>
 </marked-element>
