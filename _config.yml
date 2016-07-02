@@ -222,13 +222,13 @@ tags:
 
 # HTML Compression
 # - http://jch.penibelst.de/
-compress_html:
-  compress_html:
-  clippings: []
-  comments: []
-  endings: []
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
-  startings: []
+#compress_html:
+#  compress_html:
+#  clippings: []
+#  comments: []
+#  endings: []
+#  ignore:
+#    envs: []
+#  blanklines: false
+#  profile: false
+#  startings: []
