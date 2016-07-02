@@ -223,6 +223,6 @@ tags:
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
-  clippings: [h2]
+  clippings: [div]
   ignore:
-    envs: development
+    envs: all
